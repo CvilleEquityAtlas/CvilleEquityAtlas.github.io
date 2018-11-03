@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CVille Equity Atlas  | How to Post</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.50" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="How to Post" />
+<meta property="og:description" content="A how-to guide for adding a blog post" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cvilleequityatlas.github.io/post/how-to-post/" /><meta property="article:published_time" content="2018-11-03T17:25:36-04:00"/>
+<meta property="article:modified_time" content="2018-11-03T17:25:36-04:00"/>
+
+<meta itemprop="name" content="How to Post">
+<meta itemprop="description" content="A how-to guide for adding a blog post">
+
+
+<meta itemprop="datePublished" content="2018-11-03T17:25:36-04:00" />
+<meta itemprop="dateModified" content="2018-11-03T17:25:36-04:00" />
+<meta itemprop="wordCount" content="433">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Post"/>
+<meta name="twitter:description" content="A how-to guide for adding a blog post"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://cvilleequityatlas.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      CVille Equity Atlas
+    </a>
+    <div class="flex-l items-center">
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/post/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        BLOG
+      </p>
+      <h1 class="f1 athelas mb1">How to Post</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-11-03T17:25:36-04:00">November 3, 2018</time>
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>To directly add a post to this blog as a collaborator requires,</p>
+
+<ol>
+<li>If you don&rsquo;t yet have a <a href="https://github.com/">github account</a>, get one; download and install <a href="https://git-scm.com/downloads">git</a>. In the end, your life will be easier if you take the time to set up ssh as well &ndash; I really like <a href="http://kbroman.org/github_tutorial/pages/first_time.html">Karl Broman&rsquo;s explanation</a> of these steps.</li>
+<li>Be added as a collaborator to the organizational account, <a href="https://github.com/CvilleEquityAtlas">github.com/CvilleEquityAtlas</a></li>
+<li>Clone the atlas_site repo and the cvilleequityatals.github.io repo to your local machine (e.g., your laptop)
+
+<ul>
+<li>In the terminal/command line, navigate to where you want to put these directories and type
+<code>
+cd folder/to/clone/into/
+git clone https://github.com/CvilleEquityAtlas/atlas_site.git
+git clone https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io.git
+</code></li>
+<li>Now you have a copy of these directories and they are already attached to the original repo. To see this, in the terminal navigate to the directory and look at the remote source
+<code>
+cd atlas_site
+git remote -v
+cd public
+git remote -v
+</code>
+The atlas_site repo should say
+<code>
+origin	https://github.com/CvilleEquityAtlas/atlas_site.git (fetch)
+origin	https://github.com/CvilleEquityAtlas/atlas_site.git (push)
+</code>
+But the public folder should say
+<code>
+origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (fetch)
+origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (push)
+</code></li>
+</ul></li>
+<li>To add a post, in the terminal, navigate to the atlas_site directory and type
+<code>
+hugo new post/name-of-post.md
+</code>
+This will create a new markdown file for the next post, automatically adding the date-time and the title (based on name-of-post, which should appear as Name of Post &ndash; but you can change this to whatever you like in a moment).  It will also generate fields for a description, an image, or tags, but you can leave these blank</li>
+<li>Now add content to the markdown file. You can do this in any text editor you like (but a real text editor, not word).  I use <a href="https://atom.io/">Atom</a>, but opinions on text editors vary widely (and possibly by operating system).
+
+<ul>
+<li>The only trick is to use markdown &ndash; a plain text syntax that can be converted to HTML &ndash; . Here&rsquo;s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">a cheat sheet</a>. If the post is just plain text (no headers, links, boldface, etc.), you don&rsquo;t even need this!</li>
+</ul></li>
+<li>When you&rsquo;re done, you can check how it looks by typing  in the terminal (from the atlas_site directory)
+<code>
+hugo server
+</code>
+And checking out the changes at <a href="http://localhost:1313">http://localhost:1313</a>, a local server. In the terminal, type Ctrl+C when you want to close the local server</li>
+<li>If you&rsquo;re happy with it, in the terminal run the publish_changes.sh description
+<code>
+bash publish_changes.sh
+</code>
+(I believe git comes with a bash emulator for Windows, but I don&rsquo;t have a Windows machine to verify). This will rebuild the site and push the changes in the source code and site pages to github. Within a minute or so, the changes will be reflected on the webiste: <a href="https://cvilleequityatlas.github.io/">cvilleequityatlas.github.io</a>!</li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cvilleequityatlas.github.io" >
+    &copy; 2018 CVille Equity Atlas
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
