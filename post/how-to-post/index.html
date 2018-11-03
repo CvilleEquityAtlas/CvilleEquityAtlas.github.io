@@ -40,7 +40,7 @@
 
 <meta itemprop="datePublished" content="2018-11-03T17:25:36-04:00" />
 <meta itemprop="dateModified" content="2018-11-03T17:25:36-04:00" />
-<meta itemprop="wordCount" content="433">
+<meta itemprop="wordCount" content="437">
 
 
 
@@ -129,51 +129,59 @@
 <li>Clone the atlas_site repo and the cvilleequityatals.github.io repo to your local machine (e.g., your laptop)
 
 <ul>
-<li>In the terminal/command line, navigate to where you want to put these directories and type
-<code>
-cd folder/to/clone/into/
-git clone https://github.com/CvilleEquityAtlas/atlas_site.git
-git clone https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io.git
-</code></li>
-<li>Now you have a copy of these directories and they are already attached to the original repo. To see this, in the terminal navigate to the directory and look at the remote source
-<code>
-cd atlas_site
-git remote -v
-cd public
-git remote -v
-</code>
-The atlas_site repo should say
-<code>
-origin	https://github.com/CvilleEquityAtlas/atlas_site.git (fetch)
-origin	https://github.com/CvilleEquityAtlas/atlas_site.git (push)
-</code>
-But the public folder should say
-<code>
-origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (fetch)
-origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (push)
-</code></li>
+<li>In the terminal/command line, navigate to where you want to put these directories and type</li>
 </ul></li>
-<li>To add a post, in the terminal, navigate to the atlas_site directory and type
-<code>
-hugo new post/name-of-post.md
-</code>
-This will create a new markdown file for the next post, automatically adding the date-time and the title (based on name-of-post, which should appear as Name of Post &ndash; but you can change this to whatever you like in a moment).  It will also generate fields for a description, an image, or tags, but you can leave these blank</li>
-<li>Now add content to the markdown file. You can do this in any text editor you like (but a real text editor, not word).  I use <a href="https://atom.io/">Atom</a>, but opinions on text editors vary widely (and possibly by operating system).
+</ol>
+
+<pre><code>   cd folder/to/clone/into/
+   git clone https://github.com/CvilleEquityAtlas/atlas_site.git
+   git clone https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io.git
+</code></pre>
 
 <ul>
-<li>The only trick is to use markdown &ndash; a plain text syntax that can be converted to HTML &ndash; . Here&rsquo;s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">a cheat sheet</a>. If the post is just plain text (no headers, links, boldface, etc.), you don&rsquo;t even need this!</li>
-</ul></li>
-<li>When you&rsquo;re done, you can check how it looks by typing  in the terminal (from the atlas_site directory)
-<code>
-hugo server
-</code>
-And checking out the changes at <a href="http://localhost:1313">http://localhost:1313</a>, a local server. In the terminal, type Ctrl+C when you want to close the local server</li>
-<li>If you&rsquo;re happy with it, in the terminal run the publish_changes.sh description
-<code>
-bash publish_changes.sh
-</code>
-(I believe git comes with a bash emulator for Windows, but I don&rsquo;t have a Windows machine to verify). This will rebuild the site and push the changes in the source code and site pages to github. Within a minute or so, the changes will be reflected on the webiste: <a href="https://cvilleequityatlas.github.io/">cvilleequityatlas.github.io</a>!</li>
+<li>Now you have a copy of these directories and they are already attached to the original repo. To see this, in the terminal navigate to the directory and look at the remote source</li>
+</ul>
+
+<pre><code>   cd atlas_site
+   git remote -v
+   cd public
+   git remote -v
+</code></pre>
+
+<p>The atlas_site repo should say</p>
+
+<pre><code>   origin	https://github.com/CvilleEquityAtlas/atlas_site.git (fetch)
+   origin	https://github.com/CvilleEquityAtlas/atlas_site.git (push)
+</code></pre>
+
+<p>But the public folder should say</p>
+
+<pre><code>   origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (fetch)
+   origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (push)
+</code></pre>
+
+<ol>
+<li>To add a post, in the terminal, navigate to the atlas_site directory and type</li>
 </ol>
+
+<pre><code>hugo new post/name-of-post.md
+</code></pre>
+
+<p>This will create a new markdown file for the next post, automatically adding the date-time and the title (based on name-of-post, which should appear as Name of Post &ndash; but you can change this to whatever you like in a moment).  It will also generate fields for a description, an image, or tags, but you can leave these blank
+5. Now add content to the markdown file. You can do this in any text editor you like (but a real text editor, not word).  I use <a href="https://atom.io/">Atom</a>, but opinions on text editors vary widely (and possibly by operating system).
+   * The only trick is to use markdown &ndash; a plain text syntax that can be converted to HTML &ndash; . Here&rsquo;s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">a cheat sheet</a>. If the post is just plain text (no headers, links, boldface, etc.), you don&rsquo;t even need this!
+6. When you&rsquo;re done, you can check how it looks by typing  in the terminal (from the atlas_site directory)</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>And checking out the changes at <a href="http://localhost:1313">http://localhost:1313</a>, a local server. In the terminal, type Ctrl+C when you want to close the local server
+7. If you&rsquo;re happy with it, in the terminal run the publish_changes.sh description</p>
+
+<pre><code>bash publish_changes.sh
+</code></pre>
+
+<p>(I believe git comes with a bash emulator for Windows, but I don&rsquo;t have a Windows machine to verify). This will rebuild the site and push the changes in the source code and site pages to github. Within a minute or so, the changes will be reflected on the webiste: <a href="https://cvilleequityatlas.github.io/">cvilleequityatlas.github.io</a>!</p>
 <ul class="pa0">
   
 </ul>
