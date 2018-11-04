@@ -31,16 +31,16 @@
     <meta property="og:title" content="How to Post" />
 <meta property="og:description" content="A how-to guide for adding a blog post" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cvilleequityatlas.github.io/post/how-to-post/" /><meta property="article:published_time" content="2018-11-03T17:25:36-04:00"/>
-<meta property="article:modified_time" content="2018-11-03T17:25:36-04:00"/>
+<meta property="og:url" content="https://cvilleequityatlas.github.io/post/how-to-post/" /><meta property="article:published_time" content="2018-11-04T13:25:36-04:00"/>
+<meta property="article:modified_time" content="2018-11-04T13:25:36-04:00"/>
 
 <meta itemprop="name" content="How to Post">
 <meta itemprop="description" content="A how-to guide for adding a blog post">
 
 
-<meta itemprop="datePublished" content="2018-11-03T17:25:36-04:00" />
-<meta itemprop="dateModified" content="2018-11-03T17:25:36-04:00" />
-<meta itemprop="wordCount" content="553">
+<meta itemprop="datePublished" content="2018-11-04T13:25:36-04:00" />
+<meta itemprop="dateModified" content="2018-11-04T13:25:36-04:00" />
+<meta itemprop="wordCount" content="552">
 
 
 
@@ -59,7 +59,7 @@
 
   
   
-  <header class="cover bg-top" style="background-image: url('https://cvilleequityatlas.github.io/images/Students_Monroe_Hall_Courtyard_04.png');">
+  <header class="cover bg-top" style="background-image: url('https://cvilleequityatlas.github.io/images/avonst_graffiti_bob_mical.png');">
     <div class="pb3-m pb6-l bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -128,7 +128,7 @@
       </p>
       <h1 class="f1 athelas mb1">How to Post</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2018-11-03T17:25:36-04:00">November 3, 2018</time>
+      <time class="f6 mv4 dib tracked" datetime="2018-11-04T13:25:36-04:00">November 4, 2018</time>
     </header>
 
     <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
@@ -139,69 +139,77 @@
 
 <ol>
 <li>If you don&rsquo;t yet have a <a href="https://github.com/">github account</a>, get one; download and install <a href="https://git-scm.com/downloads">git</a>. In the end, your life will be easier if you take the time to set up ssh as well &ndash; I really like <a href="http://kbroman.org/github_tutorial/pages/first_time.html">Karl Broman&rsquo;s explanation</a> of these steps.</li>
+<li>While you&rsquo;re at it, <a href="https://gohugo.io/getting-started/installing/">install hugo</a>.</li>
 <li>Be added as a collaborator to the organizational account, <a href="https://github.com/CvilleEquityAtlas">github.com/CvilleEquityAtlas</a></li>
-<li>Clone the atlas_site repo and the cvilleequityatals.github.io repo to your local machine (e.g., your laptop)
+
+<li><p>Clone the atlas_site repo and the cvilleequityatals.github.io repo to your local machine (e.g., your laptop)</p>
 
 <ul>
 <li>In the terminal/command line, navigate to where you want to put these directories and type</li>
-</ul></li>
-</ol>
+</ul>
 
-<pre><code>   cd folder/to/clone/into/
-   git clone https://github.com/CvilleEquityAtlas/atlas_site.git
-   git clone https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io.git
+<pre><code>cd folder/to/clone/into/
+git clone https://github.com/CvilleEquityAtlas/atlas_site.git
+git clone https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io.git
 </code></pre>
 
 <ul>
 <li>Now you have a copy of these directories and they are already attached to the original repo. To see this, in the terminal navigate to the directory and look at the remote source</li>
 </ul>
 
-<pre><code>   cd atlas_site
-   git remote -v
-   cd public
-   git remote -v
+<pre><code>cd atlas_site
+git remote -v
+cd public
+git remote -v
 </code></pre>
 
 <p>The atlas_site repo should say</p>
 
-<pre><code>   origin	https://github.com/CvilleEquityAtlas/atlas_site.git (fetch)
-   origin	https://github.com/CvilleEquityAtlas/atlas_site.git (push)
+<pre><code>origin  https://github.com/CvilleEquityAtlas/atlas_site.git (fetch)
+origin  https://github.com/CvilleEquityAtlas/atlas_site.git (push)
 </code></pre>
 
 <p>But the public folder should say</p>
 
-<pre><code>   origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (fetch)
-   origin	https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (push)
-</code></pre>
+<pre><code>origin  https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (fetch)
+origin  https://github.com/CvilleEquityAtlas/CvilleEquityAtlas.github.io (push)
+</code></pre></li>
 
-<ol>
-<li>To add a post, in the terminal, navigate to the atlas_site directory and type</li>
-</ol>
+<li><p>To add a post, in the terminal, navigate to the atlas_site directory and type</p>
 
 <pre><code>hugo new post/name-of-post.md
 </code></pre>
 
-<p>This will create a new markdown file for the next post, automatically adding the date-time and the title (based on name-of-post, which should appear as Name of Post &ndash; but you can change this to whatever you like in a moment).  It will also generate fields for a description, an image, or tags, but you can leave these blank
-5. Now add content to the markdown file. You can do this in any text editor you like (but a real text editor, not word).  I use <a href="https://atom.io/">Atom</a>, but opinions on text editors vary widely (and possibly by operating system).
-   * The only trick is to use markdown &ndash; a plain text syntax that can be converted to HTML &ndash; . Here&rsquo;s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">a cheat sheet</a>. If the post is just plain text (no headers, links, boldface, etc.), you don&rsquo;t even need this!
-6. When you&rsquo;re done, you can check how it looks by typing  in the terminal (from the atlas_site directory)</p>
+<p>This will create a new markdown file for the next post, automatically adding the date, time and title (based on &ldquo;name-of-post&rdquo;, which should appear as Name of Post, but you can change this to whatever you like in a moment).  It will also generate fields for a description, an image, or tags, but you can leave these blank.</p></li>
+
+<li><p>Now add content to the markdown file. You can do this in any text editor you like (but a real text editor, not word).  I use <a href="https://atom.io/">Atom</a>, but opinions on text editors vary widely (and possibly by operating system).</p>
+
+<ul>
+<li>The only trick is to use markdown &ndash; a plain text syntax that can be converted to HTML. Here&rsquo;s <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">a cheat sheet</a>. If the post is just plain text (no headers, links, boldface, etc.), you don&rsquo;t even need this!</li>
+</ul></li>
+
+<li><p>When you&rsquo;re done, you can check how it looks by typing  in the terminal (from the atlas_site directory)</p>
 
 <pre><code>hugo server
 </code></pre>
 
-<p>And checking out the changes at <a href="http://localhost:1313">http://localhost:1313</a>, a local server. In the terminal, type Ctrl+C when you want to close the local server
-7. If you&rsquo;re happy with it, in the terminal run the publish_changes.sh description</p>
+<p>And checking out the changes at <a href="http://localhost:1313">http://localhost:1313</a>, a local
+server. In the terminal, type Ctrl+C when you want to close the local server</p></li>
+
+<li><p>If you&rsquo;re happy with it, in the terminal run the publish_changes.sh description</p>
 
 <pre><code>bash publish_changes.sh
-</code></pre>
+</code></pre></li>
+</ol>
 
-<p>(I believe git comes with a bash emulator for Windows, but I don&rsquo;t have a Windows machine to verify). This will rebuild the site and push the changes in the source code and site pages to github. Within a minute or so, the changes will be reflected on the webiste: <a href="https://cvilleequityatlas.github.io/">cvilleequityatlas.github.io</a>!</p>
+<p>(I believe git comes with a bash emulator for Windows, but I don&rsquo;t have a Windows machine to verify.) This will rebuild the site and push the changes in the source code and site pages to github. Within a minute or so, the changes will be reflected on the webiste: <a href="https://cvilleequityatlas.github.io/">cvilleequityatlas.github.io</a>!</p>
 
 <h2 id="method-the-second-dependent-updates">Method the second: dependent updates</h2>
 
-<p>If you don&rsquo;t want to do all that, you can follow steps 1 and 2 and make changes in the github repo directly.</p>
+<p>If you don&rsquo;t want to do all that, you can follow steps 1-3 and make changes in the github repo directly.</p>
 
 <ol>
+<li>as above</li>
 <li>as above</li>
 <li>as above</li>
 
